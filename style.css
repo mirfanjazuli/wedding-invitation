@@ -1,0 +1,461 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    /* min-height: 2000px; */
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/couple.jpg'); /* pastikan path benar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.5; /* opsional: supaya teks di atas tetap jelas */
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* background-color: var(--bg); */
+}
+
+#hero {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+#hero.fade-out {
+    opacity: 0;
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+    border: 1px solid var(--pink);
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+.btn-radar {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-radar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(241, 78, 149, 0.4); /* warna pink glow */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: radarPulse 2s ease-out infinite;
+    z-index: -1;
+}
+
+@keyframes radarPulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.6;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.left {
+    background-color: #fef8f4;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: auto;
+    border-right: 1px solid #ddd;
+}
+
+.main .left {
+    padding: 8rem;
+    background-image: url('img/decoration.jpg'); /* pastikan path benar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main .left h3 {
+    font-size: 1rem;       /* lebih kecil dari default h3 */
+    font-weight: 400;      /* normal */
+}
+
+.main .left h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+}
+
+.main .left p {
+    font-size: 0.9rem;     /* lebih kecil dari default p */
+    font-weight: 300;      /* lebih tipis */
+}
+
+.main .right {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem;
+    background-color: #fff;
+    top: 0;
+}
+
+.main .cover {
+    background-image: url('img/decoration.jpg');
+    background-size: cover;
+    background-position: center top;  /* Posisi gambar lebih ke atas */
+    height: 100vh;  /* Full height viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.main .cover h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.main .cover h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.main .cover p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.main .cover a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--pink);
+    background-color: white;
+    border: 1px solid var(--pink);
+}
+
+.cover a:hover {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+.home h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.couple {
+    background-image: url('img/decoration.jpg');
+    background-size: cover;
+    background-position: center top;  /* Posisi gambar lebih ke atas */
+    height: 100vh;  /* Full height viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.main .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.main .couple img {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.main .couple p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+.timer p {
+    font-size: 0.9rem;
+    font-weight: 300;    
+}
+
+.info {
+    background-image: url('img/decoration.jpg');
+    background-size: cover;
+    background-position: center;  /* Posisi gambar lebih ke atas */
+    height: 160vh;  /* Full height viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.info h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.info a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--pink);
+    background-color: white;
+    border: 1px solid var(--pink);
+}
+
+.info a:hover {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+.rsvp h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.rsvp input,
+.rsvp textarea,
+.rsvp select {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.rsvp button {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--pink);
+    background-color: white;
+    border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
+    background-color: var(--pink);
+}
+
+.footer {
+    background-color: var(--pink);
+    padding: 1rem;
+}
+
+.footer small {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.audio-icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    -webkit-animation: rotating 4s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+/* media query */
+
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* tab */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .main .left {
+        width: 50%;
+    }
+
+    .main .right {
+        width: 50%;
+    }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .main .left {
+        display: none !important;
+    }
+
+    .main .right {
+        width: 100%;
+    }
+
+    .main .right h3 {
+        font-size: 2rem; /* Ukuran font lebih besar di mobile */
+    }
+
+    .main .right h1 {
+        font-size: 7rem; /* Ukuran font lebih besar di mobile */
+    }
+
+    .main .right p, 
+    .main .right a,
+    .rsvp input,
+    .rsvp textarea,
+    .rsvp select,
+    .rsvp button,
+    .footer small {
+        font-size: 1.4rem; /* Ukuran font lebih besar di mobile */
+    }
+
+    .home h2,
+    .info h2,
+    .rsvp h2 {
+        color: var(--pink);
+        font-family: 'Sacramento';
+        font-size: 5rem;
+        font-weight: bold;
+    }    
+
+    .main .couple h3 {
+        font-family: 'Sacramento';
+        font-size: 4rem;
+        color: var(--pink);
+    }
+
+    .info {
+        background-image: url('img/decoration.jpg');
+        background-size: cover;
+        background-position: center;  /* Posisi gambar lebih ke atas */
+        height: 130vh;  /* Full height viewport */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        scroll-snap-align: start;
+    }
+
+    .rsvp button:hover {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: white;
+        background-color: var(--pink);
+    }
+}
