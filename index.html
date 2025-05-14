@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -21,7 +22,7 @@
     <section>
         <main id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex flex-column justify-content-center align-items-center text-white">
             <h4>The Wedding Of</h4>
-            <h1>Ayu & Taqi</h1>
+            <h1>Ayu <span class="highlight">&</span> Taqi</h1>
             <p>17.06.2025</p>
             <a href="#main" id="btn-open-invitation" class="btn btn-lg btn-radar mt-4">Open Invitation</a>
         </main>
@@ -29,16 +30,25 @@
     <section id="main" class="main">
         <div class="row">
             <aside class="left col-md-8 d-flex flex-column justify-content-center">
+                <img src="img/top-left.png" class="corner-image corner-top-left" />
+                <img src="img/top-right.png" class="corner-image corner-top-right" />
+                <img src="img/bottom-left.png" class="corner-image corner-bottom-left" />
+                        <img src="img/bottom-right.png" class="corner-image corner-bottom-right" />
                 <h3 class="mb-4">OUR WEDDING INVITATION</h3>
                 <h1 class="mb-4">Ayu & Taqi</h1>
-                <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang." <br>(QS. Ar Rum: 21)</p>
-                <p>Kepada Yth.<br><strong>Nama Tamu</strong></p>
+                <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, <br> dan Dia menjadikan di antaramu rasa kasih dan sayang." <br>(QS. Ar Rum: 21)</p>
+                <p>Kepada Yth.<br><strong>Bapak/Ibu/Saudara/i</strong></p>
             </aside>
-            <main class="right col-md-4 justify-content-center align-items-center text-center p-4">
+            <main class="right col-sm-4 justify-content-center align-items-center text-center p-0">
                 <section class="row cover justify-content-center align-items-center text-center">
                     <div class="col-md-8 col-10 text-center">
+                        <img src="img/top-left.png" class="corner-image corner-top-left" />
+                        <img src="img/top-right.png" class="corner-image corner-top-right" />
+                        <img src="img/bottom-left.png" class="corner-image corner-bottom-left" />
+                        <img src="img/bottom-right.png" class="corner-image corner-bottom-right" />
                         <h3 class="mb-4">THE WEDDING OF</h3>
-                        <h1 class="mb-4">Ayu & Taqi</h1>
+                        <!-- <h1 class="mb-4">Ayu & Taqi</h1> -->
+                        <img src="img/initial-cover.png" alt="" width="100%" class="initial-cover">
                         <p>Kamis, 17 Juni 2025</p>
                         <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ayu+%26+Taqi+Wedding&dates=20250617T030000Z/20250617T050000Z&details=Merupakan+kehormatan+bagi+kami+jika+Bapak%2FIbu%2FSaudara%2Fi+dapat+hadir+%0Adalam+acara+pernikahan+kami.&location=Gedung+Serbaguna,+Surabaya&sf=true&output=xml" target="_blank" id="btn-save-date" class="btn btn-lg btn-radar mt-4"><i class="bi bi-calendar3"></i> Simpan Tanggal</a>
                     </div>
@@ -56,30 +66,39 @@
                         </div>
                     </div>
                 </section>
-                <section class="row couple gap-4 py-5 px-3">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-8 text-end">
-                                <h3>Ayu</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <p>Putri dari Bapak Lorem dan Ibu Ipsum</p>
-                            </div>
-                            <div class="col-4">
-                                <img src="img/woman.jpg" alt="ayu" class="img-responsive rounded-circle">
-                            </div>
+                <section class="position-relative">
+                    <!-- Gambar sudut -->
+                    <img src="img/top-left.png" class="corner-image corner-top-left" />
+                    <img src="img/top-right.png" class="corner-image corner-top-right" />
+                    <img src="img/bottom-left.png" class="corner-image corner-bottom-left" />
+                    <img src="img/bottom-right.png" class="corner-image corner-bottom-right" />
+
+                    <div class="row couple">
+                        <!-- <div class="col-12"> -->
+                            <!-- <div class="align-items-center"> -->
+                                <div class="col-4 mb-4">
+                                    <img src="img/woman.jpg" alt="ayu" class="img-responsive rounded-circle">
+                                </div>
+                                <div class="col-10 text-center">
+                                    <p>Putri pertama dari Alm. Bapak Agus dan Ibu Atik</p>
+                                    <h3>Ayu Astiningtyas Ermawan</h3>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <div>
+                            <h2>&</h2>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="img/man.jpg" alt="taqi" class="img-responsive rounded-circle">
-                            </div>
-                            <div class="col-8 text-start">
-                                <h3>Taqi</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <p>Putra dari Bapak Lorem dan Ibu Ipsum</p>
-                            </div>
-                        </div>
+                        <!-- <div class="col-12"> -->
+                            <!-- <div class="align-items-center"> -->
+                                <div class="col-8 text-center">
+                                    <h3>Taqiyuddin Ja'far Syaifullah</h3>
+                                    <p>Putra pertama dari Bapak Dhody dan Ibu Endah</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="img/man.jpg" alt="taqi" class="img-responsive rounded-circle">
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
                     </div>
                 </section>
                 <section class="timer">
@@ -92,25 +111,32 @@
                         </div>
                     </div>
                 </section>
-                <section class="row info gap-4 py-5 px-3">
+                <section class="info gap-4 position-relative">
+                    <img src="img/top-left.png" class="corner-image corner-top-left" />
+                    <img src="img/top-right.png" class="corner-image corner-top-right" />
+                    <img src="img/bottom-left.png" class="corner-image corner-bottom-left" />
+                    <img src="img/bottom-right.png" class="corner-image corner-bottom-right" />
                     <div class="row justify-content-center">
-                            <div class="col-md-8 col-10 text-center">
-                                <h2>Informasi <br> Acara</h2>
+                        <div class="col-md-8 col-10 text-center">
+                            <h2>Informasi <br> Acara</h2>
+                            <div class="mt-4">
                                 <p class="alamat">Perumtas 3 Blok 06 No. 01, RT 22 RW 06, Desa Kepuh Kemiri, Tulangan, Sidoarjo</p>
-                                <!-- <a href="https://maps.app.goo.gl/qPdBTHvg37SeQxdi9" target="_blank" class="btn btn-light btn-sm btn-radar">Klik untuk membuka peta</a> -->
                             </div>
+                            <!-- <a href="https://maps.app.goo.gl/qPdBTHvg37SeQxdi9" target="_blank" class="btn btn-light btn-sm btn-radar">Klik untuk membuka peta</a> -->
+                        </div>
+                        <div class="col-10">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.424719899492!2d112.72139517452321!3d-7.306088992701721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb96858e3cf9%3A0x841d1160ca0539e0!2sWarkop%20titik%20kumpul%20kopi%20(TKK)!5e0!3m2!1sid!2sid!4v1747027366607!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-md-8 col-10 text-center">
-                                <div class="card text-center rounded-3 mb-4">
+                            <div class="col-6 text-center mt-3">
+                                <div class="akad-card card text-center mb-4">
                                     <div class="card-body">
                                         <h5 class="card-title">AKAD NIKAH</h5>
                                         <p class="card-text">Kamis, 17 Juni 2025</p>
                                         <p class="card-text">Pukul 08.00 - 09.00 WIB</p>
                                     </div>
                                 </div>
-                                <div class="card text-center rounded-3">
+                                <div class="resepsi card soft-card text-center">
                                     <div class="card-body">
                                         <h5 class="card-title">RESEPSI</h5>
                                         <p class="card-text">Kamis, 17 Juni 2025</p>
@@ -119,6 +145,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </section>
                 <section class="rsvp">
                     <div class="container">
@@ -129,19 +156,18 @@
                                     <div class="mb-3">
                                         <input type="text" class="form-control" id="Nama" name="Nama" placeholder="Nama">
                                     </div>
-                                    <!-- <div class="mb-3">
+                                    <div class="mb-3">
                                         <textarea class="form-control" id="Ucapan" name="Ucapan" rows="3" placeholder="Ucapan"></textarea>
-                                    </div> -->
+                                    </div>
                                     <select class="form-select" name="Kehadiran" aria-label="Default select example">
                                         <option selected>Kehadiran</option>
                                         <option value="Hadir">Hadir</option>
                                         <option value="Tidak Hadir">Tidak Hadir</option>
-                                        <option value="Masih Ragu">Masih Ragu</option>
                                     </select>
                                     <button type="submit" class="btn btn-radar mt-3">Kirim</button>
                                 </form>
                             </div>
-                            <div class="row justify-content-center mt-5">
+                            <!-- <div class="row justify-content-center mt-5">
                                 <div id="disqus_thread"></div>
                                 <script>
                                     /**
@@ -164,7 +190,7 @@
                                     <a href="https://disqus.com/?ref_noscript">comments powered by
                                     Disqus.</a>
                                 </noscript>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </section>
@@ -268,8 +294,8 @@
     simplyCountdown('.simply-countdown', {
         year: 2025, // Target year (required)
         month: 6, // Target month [1-12] (required)
-        day: 17, // Target day [1-31] (required)
-        hours: 8, // Target hour [0-23], default: 0
+        day: 20, // Target day [1-31] (required)
+        hours: 14, // Target hour [0-23], default: 0
         words: { // Custom labels, with lambda for plurals
             days: { root: 'hari', lambda: (root, n) => n > 1 ? root : root },
             hours: { root: 'jam', lambda: (root, n) => n > 1 ? root : root },
