@@ -480,18 +480,19 @@ body {
         background-image: url('img/background.jpg');
         background-size: cover;
         background-position: center;  /* Posisi gambar lebih ke atas */
-        height: 125dvh;  /* Full height viewport */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         scroll-snap-align: start;
+        /* margin-top: 100px;
+        margin-bottom: 100px; */
     }
 
     .info .event {
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 550px;
+        margin-bottom: 550px;
     }
 
     .home {
@@ -513,5 +514,9 @@ body {
         font-weight: 400;
         color: white;
         background-color: var(--navy);
+    }
+
+    .footer {
+        height: 10rem;
     }
 }
