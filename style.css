@@ -10,7 +10,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* cegah scroll samping */
+    overflow: hidden; /* cegah scroll samping */
+    scroll-behavior: smooth;
 }
 
 body {
