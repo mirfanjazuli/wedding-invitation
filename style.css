@@ -350,6 +350,7 @@ body {
 #my-form select {
     border: 1px solid var(--navy);
     opacity: 50%;
+    font-family: 'Cormorant Garamond';
 }
 
 /* ========== Footer ========== */
@@ -418,13 +419,13 @@ body {
     .hero {
         position: relative;
         overflow: hidden;
-        height: 100vh;
+        height: 100dvh;
     }
 
     .corner-image {
         position: absolute;
-        width: 280px; /* atau sesuai kebutuhan */
-        height: 280px;
+        width: 270px; /* atau sesuai kebutuhan */
+        height: 270px;
     }
 
     .main .left {
@@ -432,8 +433,8 @@ body {
     }
 
     .main .right {
-        height: 100vh;
-        width: 100vh;
+        height: 100dvh;
+        width: 100dvh;
     }
 
     .main .right h3 {
@@ -479,7 +480,7 @@ body {
         background-image: url('img/background.jpg');
         background-size: cover;
         background-position: center;  /* Posisi gambar lebih ke atas */
-        height: 90vh;  /* Full height viewport */
+        height: 90dvh;  /* Full height viewport */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -494,7 +495,7 @@ body {
     }
 
     .couple {
-        height: 80vh;
+        height: 80dvh;
     }
 
     .timer {
