@@ -418,13 +418,13 @@ body {
     .hero {
         position: relative;
         overflow: hidden;
-        height: 90vh;
+        height: 100vh;
     }
 
     .corner-image {
         position: absolute;
-        width: 270px; /* atau sesuai kebutuhan */
-        height: 270px;
+        width: 280px; /* atau sesuai kebutuhan */
+        height: 280px;
     }
 
     .main .left {
@@ -432,6 +432,7 @@ body {
     }
 
     .main .right {
+        height: 100vh;
         width: 100vh;
     }
 
