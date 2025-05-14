@@ -7,6 +7,12 @@
         0 4px 6px rgba(0, 0, 0, 0.08);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* cegah scroll samping */
+}
+
 body {
     font-size: 1.2rem;
     font-family: 'Cormorant Garamond', sans-serif;
@@ -19,6 +25,7 @@ body {
 
 .hero {
     position: relative;
+    overflow: hidden;
     min-height: 100vh;
 }
 
@@ -405,12 +412,12 @@ body {
 @media (max-width: 567px) {
     .hero h1 {
         font-size: 7rem;
-    }
+    } 
 
     .corner-image {
         position: absolute;
-        width: 300px; /* atau sesuai kebutuhan */
-        height: 300px;
+        width: 285px; /* atau sesuai kebutuhan */
+        height: 285px;
     }
 
     .main .left {
@@ -421,9 +428,9 @@ body {
         width: 100vh;
     }
 
-    .right .initial-cover {
-        width: 75%;
-    }
+    /* .right .initial-cover {
+        width: 100%;
+    } */
 
     .main .right h3 {
         font-size: 1.5rem; /* Ukuran font lebih besar di mobile */
