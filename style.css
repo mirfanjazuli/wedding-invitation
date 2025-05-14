@@ -412,10 +412,6 @@ body {
 
 /* mobile */
 @media (max-width: 567px) {
-    p {
-        font-size: 10rem;
-    }
-
     .hero h1 {
         font-size: 7rem;
     }
@@ -484,13 +480,18 @@ body {
         background-image: url('img/background.jpg');
         background-size: cover;
         background-position: center;  /* Posisi gambar lebih ke atas */
-        height: 130vh;  /* Full height viewport */
+        height: 125dvh;  /* Full height viewport */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         scroll-snap-align: start;
+    }
+
+    .info .event {
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     .home {
