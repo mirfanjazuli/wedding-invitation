@@ -412,12 +412,18 @@ body {
 @media (max-width: 567px) {
     .hero h1 {
         font-size: 7rem;
-    } 
+    }
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
 
     .corner-image {
         position: absolute;
-        width: 265px; /* atau sesuai kebutuhan */
-        height: 265px;
+        width: 270px; /* atau sesuai kebutuhan */
+        height: 270px;
     }
 
     .main .left {
@@ -427,10 +433,6 @@ body {
     .main .right {
         width: 100vh;
     }
-
-    /* .right .initial-cover {
-        width: 100%;
-    } */
 
     .main .right h3 {
         font-size: 1.5rem; /* Ukuran font lebih besar di mobile */
@@ -466,11 +468,16 @@ body {
 
     }
 
+    .home p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     .info {
         background-image: url('img/background.jpg');
         background-size: cover;
         background-position: center;  /* Posisi gambar lebih ke atas */
-        height: 130vh;  /* Full height viewport */
+        height: 90vh;  /* Full height viewport */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -485,16 +492,12 @@ body {
     }
 
     .couple {
-        height: 100vh;
+        height: 80vh;
     }
 
     .timer {
         margin-top: 5rem;
         margin-bottom: 5rem;
-    }
-
-    .info {
-        height: 120vh;
     }
 
     .rsvp button:hover {
