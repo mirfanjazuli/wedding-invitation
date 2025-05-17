@@ -135,6 +135,10 @@ body {
     position: relative;
 }
 
+.left .highlight {
+    color: var(--navy);
+}
+
 .main .left {
     position: relative; /* Penting agar posisi absolute bekerja di dalamnya */
     padding: 8rem;
@@ -231,7 +235,26 @@ body {
 .info .akad,
 .info .resepsi {
     background-color: transparent;
-    border: 1px solid var(--gold);
+    /* border: 1px solid var(--gold); */
+    border: none;
+}
+
+.info .date p {
+    font-size: 3rem !important;
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.info .vertical-line {
+    width: 2px;
+    background-color: var(--navy);
+    /* margin: 0 10px; */
+}
+
+.info .akad h5,
+.info .resepsi h5 {
+    font-family: 'Sacramento';
+    font-size: 2rem;
 }
 
 .cover h1,
@@ -244,9 +267,9 @@ body {
     font-weight: 300;
 }
 
-.info p {
+/* .info p {
     font-size: 0.9rem;
-}
+} */
 
 .cover h1 {
     font-family: 'Sacramento', cursive;
@@ -490,6 +513,22 @@ body {
         margin-bottom: 100px; */
     }
 
+    .info .date p {
+        /* font-size: 10px; */
+        color: var(--navy);
+    }
+
+.info .vertical-line {
+    width: 2px;
+    background-color: var(--navy);
+    /* margin: 0 10px; */
+}
+
+.info .akad h5,
+.info .resepsi h5 {
+    font-family: 'Sacramento';
+}
+
     /* .info .event {
         margin-top: 550px;
         margin-bottom: 550px;
@@ -516,7 +555,7 @@ body {
         background-color: var(--navy);
     }
 
-    .footer {
-        height: 10rem;
-    }
+    /* .footer {
+        height: 2rem;
+    } */
 }
